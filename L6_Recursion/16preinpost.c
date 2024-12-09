@@ -6,6 +6,8 @@ void PreInPost(int n){
     printf("In %d\n", n);
     PreInPost(n-1);
     printf("Post %d\n", n);
+
+    return;
     
 }
 
