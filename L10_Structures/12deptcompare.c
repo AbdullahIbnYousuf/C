@@ -16,6 +16,10 @@ void check (student a, student b){
     {
         printf("Same Dept");
     }
+    else
+    {
+        printf("Different Dept");
+    }
     return;
     
 }
@@ -31,11 +35,14 @@ int main()
     a.year=2023;
 
     student b;
-    b.roll=246;
-    strcpy(b.name, "Abdullah");
-    strcpy(b.dept, "CSE");
-    strcpy(b.course, "CSE");
-    b.year=2023;
+    a = b;
+    strcpy(b.course, "MPE");
+
+    // b.roll=246;
+    // strcpy(b.name, "Abdullah");
+    // strcpy(b.dept, "CSE");
+    // strcpy(b.course, "CSE");
+    // b.year=2023;
 
     check(a,b);
 
