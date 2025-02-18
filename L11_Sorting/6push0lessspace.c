@@ -2,15 +2,15 @@
 #include<stdbool.h>
 int main()
 {
-    int arr[5] =  {1, 5, 4, 2, 3};
-    int n = 5;
+    int arr[10] = {5,0,2,0,0,4,1,3,0};
+    int n = 9;
     
     for (int i = 0; i < n - 1; i++)
     {
         bool flag = true;
         for (int j = 0; j < n - 1 - i; j++)
         {
-            if(arr[j] > arr[j + 1])
+            if(!arr[j] && arr[j + 1])
             {
                 int temp = arr[j];
                 arr[j] = arr[j + 1];
